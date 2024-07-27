@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(48, 48, 48);
+}
+
+input{
+    font-size: 25px;
+    padding-left: 15px;
+}
+
+button{
+    font-size: 20px;
+}
+
+.for-inputs{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 550px;
+}
+
+.for-name{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.for-name > h2{
+    color: white;
+    font-family: montserrat;
+}
+
+.modal-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*display: flex;*/
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    background-color: azure;
+    font-family: montserrat;
+    transition: 1s ease-in;
+}
+
+.modal-box > h1{
+    padding-top: 25px;
+
+}
+
+.dd{
+    background: linear-gradient(45deg, blue, purple);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.Db{
+    color: rgb(0, 150, 150);
+}
+
+.for-sup-right{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px 15px 15px;
+}
+
+.for-sup-right > p{
+    color: rgb(99, 99, 99);
+}
+
+.btn-proceed{
+    width: 200px;
+    height: 35px;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 0%;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(0, 148, 148);
+    color: white;
+}
+
+.for-p{
+    font-size: 21px;
+    padding: 0 8% 0 8%;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    hover{
+        text-decoration: underline;
+    }
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.open{
+    width: 450px;
+    height: 450px;
+    display: flex;
+    visibility: visible;
+    transition: 1s ease-in;
+}
+
+.closed{
+    display: none;
+    width: 200px;
+    visibility: hidden;
+    transition: 1s ease-in; 
+}
+
+.for-btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.for-btn > button{
+    border: none;
+    background-color: white;
+    width: 100px;
+    font-family: montserrat;
+    font-size: 22px;
+    font-weight: 600;
+}
