@@ -57,7 +57,7 @@ button{
 }
 
 .modal-box > h1{
-    padding-top: 25px;
+    padding-top: 15px;
 
 }
 
@@ -138,4 +138,22 @@ a:hover{
     font-family: montserrat;
     font-size: 22px;
     font-weight: 600;
+}
+
+#language{
+    width: 60px;
+    font-size: 15px;
+    border-radius: 0px;
+    border: none;
+}
+
+.for-lang{
+    display: flex;
+    width: 430px;
+    justify-content: flex-end;
+    padding: 10px 0 0 0;
+}
+
+#img{
+    border-radius: 30px;
 }
