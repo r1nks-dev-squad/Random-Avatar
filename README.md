@@ -10,14 +10,15 @@
 
 # Navigation Panel
 
-- [About](#about)
+[About](#about)
+[Installation](#installation)
 
 # About
 Random-avatar is a free-to-use web app created by **<span><a href="github.com/r1nk1337">r1nk</a></span>**. In this app you can type your name and you'll get a cool avatar powered by <a href="dicebear.com">DiceBear</a> an open-source styles library
 
 ---
 
-# instalation(web site soon!) 
+# Instalation(web site soon!) 
 **1**.Clone this repo.
 ```bash
 git clone https://github.com/r1nks-dev-squad/Random-avatar
