@@ -23,7 +23,7 @@
 ---
 
 # About
-Random-avatar is a free-to-use web app created by **<span><a href="github.com/r1nk1337">r1nk</a></span>**. In this app you can type your name and you'll get a cool avatar powered by <a href="dicebear.com">DiceBear</a> an open-source styles library
+Random-avatar is a free-to-use web app created by **<span><a href="https://github.com/r1nk1337">r1nk</a></span>**. In this app you can type your name and you'll get a cool avatar powered by <a href="https://www.dicebear.com">DiceBear</a> an open-source styles library
 
 ---
 
@@ -66,7 +66,7 @@ $ git clone https://github.com/r1nks-dev-squad/Random-avatar
 
 **Creator:** <a href="github.com/r1nk1337">r1nk1337</a>;
 
-**Library & API:** <a href="dicebear.com">DiceBear</a>;
+**Library & API:** <a href="https://www.dicebear.com">DiceBear</a>;
 
 ---
 
