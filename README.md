@@ -4,21 +4,21 @@
 
 </div>
 
-![Знімок екрана 2024-07-28 о 01 17 09](https://github.com/user-attachments/assets/6d878309-027a-43f9-a1ff-e244158f8632)
+![Header](https://github.com/user-attachments/assets/fc1f198f-eaaf-4f51-b652-4757c3636565)
 
 ---
 
 # Navigation Panel
 
-[About](#about)
+- [About](#about)
 
-[Installation](#instalation)
+- [Installation](#instalation)
 
-[Usage](#usage)
+- [Usage](#usage)
 
-[Special thanks to](#special-thanks-to)
+- [Special thanks to](#special-thanks-to)
 
-[Contact Us](#contact-us)
+- [Contact Us](#contact-us)
 
 ---
 
@@ -50,15 +50,15 @@ $ git clone https://github.com/r1nks-dev-squad/Random-avatar
 # Usage
 **1**.Once you open web app hit the button proceed
 
-<img src="https://github.com/user-attachments/assets/2d78fc03-f491-4948-a635-839a613a6685" width="600">
+<img src="https://github.com/user-attachments/assets/6d267664-c519-485e-8dc3-eba999044ba9" width="600">
 
 **2**.Enter your **Name**(required) and age (optionaly)
 
-<img src="https://github.com/user-attachments/assets/f0c47514-d93b-4309-8dda-7abccc724858" width="600">
+<img src="https://github.com/user-attachments/assets/70997d8a-7f8e-458e-90b9-d56426363ee6" width="600">
 
 **3**.Get your **exlusive** avatar
 
-<img src="https://github.com/user-attachments/assets/8acc57ce-5e60-4095-aea2-f8a977287dca" width="600">
+<img src="https://github.com/user-attachments/assets/4ce2f56c-f9d7-4078-873d-eb589967aed5" width="600">
 
 ---
 
