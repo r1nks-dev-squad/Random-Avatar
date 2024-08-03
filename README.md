@@ -79,6 +79,7 @@ $ git clone https://github.com/r1nks-dev-squad/Random-avatar
 **Organisation's manager (John):** johnwalkerker16071989@gmail.com;
 
 ---
+.
 
 
 
