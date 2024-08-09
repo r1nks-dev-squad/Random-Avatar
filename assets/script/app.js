@@ -9,9 +9,47 @@ const modalBox = document.querySelector('.modal-box');
 const btnProceed = document.querySelector('#btn-proceed');
 const btntrouble = document.querySelector('#trouble');
 const forInp = document.querySelector('.for-inputs');
+const forInp1 = document.querySelector('.for-inputs1');
 const select = document.getElementById('language');
 const black = document.getElementById('black');
-const colorPicker = document.getElementById('color-picker');
+const bod = document.querySelector('body');
+var navlist = document.querySelector('#navlistOpt');
+var menu = document.querySelector('.icon-For-menu');
+var closeI = document.querySelector('.fa-xmark');
+var menuI = document.querySelector('.fa-bars');
+const home = document.getElementsByClassName('reload');
+
+closeI.classList.add('noUse');
+menu.addEventListener('click', function () {
+  if (navlist.id.includes('navlistOpt')) {
+    openNav();
+  } else {
+    closeNav();
+  }
+});
+bod.addEventListener('contextmenu', function (a) {
+  alert('Inspect is forbidden');
+  a.preventDefault();
+});
+
+function closeNav() {
+  if (!navlist.id.includes('navlistOpt')) {
+    navlist.classList.remove('navlistOpt');
+    navlist.id = 'navlistOpt';
+    menuI.classList.remove('noUse');
+    closeI.classList.add('noUse');
+    //for check
+    //      console.log('nav list was closed succesfully');
+  }
+}
+function openNav() {
+  navlist.id = '';
+  navlist.classList.add('navlistOpt');
+  menuI.classList.add('noUse');
+  closeI.classList.remove('noUse');
+  //for check
+  //      console.log('nav list was opened succesfully');
+}
 
 const translations = {
   en: {

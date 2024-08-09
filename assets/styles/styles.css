@@ -13,8 +13,109 @@
   color: white;
 }
 
+/*#menuI {
+  position: absolute;
+  right: 25px;
+  display: none;
+}*/
+
 body {
-  background-color: rgb(48, 48, 48);
+  background-image: url(mainBG.jpg);
+}
+
+header {
+  position: fixed;
+  top: 1.5%;
+  left: 3%;
+  font-family: poppins;
+  font-size: 35px;
+  font-weight: bold;
+}
+.navlist {
+  display: flex;
+  content: ' ';
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  padding: 0, 100px;
+  font-size: 25px;
+}
+
+.navlist > a {
+  color: white;
+}
+
+.nav-element {
+  content: ' ';
+  text-decoration: none;
+}
+nav > ul {
+  width: 400px;
+  position: fixed;
+  right: 20%;
+}
+nav {
+  color: white;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  background: transparent;
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 2px solid gray;
+  align-items: center;
+  justify-content: center;
+}
+nav > ul > a {
+  color: black;
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: 25px;
+  padding-left: 25px;
+  font-weight: 500;
+}
+
+#navlistOpt {
+  display: none;
+  z-index: -1;
+}
+
+.noUse {
+  display: none;
+  visibility: hidden;
+}
+
+.navlistOpt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 5%;
+  right: 10%;
+  width: 200px;
+  background: transparent;
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid gray;
+  height: 300px;
+  border-radius: 25px;
+  z-index: 9999999999999;
+}
+
+#navlistOpt > a {
+  text-decoration: none;
+  color: white;
+  font-family: Rubik;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.navlistOpt > a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid gray;
+  font-family: Rubik;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 input {
@@ -61,7 +162,7 @@ button {
 
 .for-inputs {
   position: absolute;
-  top: 50%;
+  top: calc(50% + 40px);
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -78,7 +179,7 @@ button {
 
 .for-inputs1 {
   position: absolute;
-  top: 50%;
+  top: calc(50% + 40px);
   left: 50%;
   transform: translate(-50%, -50%);
   flex-direction: column;
@@ -87,7 +188,6 @@ button {
   height: 640px;
   padding: 27px;
   background: linear-gradient(90deg, #03a9f4, #f441a5);
-  filter: blur(1.2em);
   border-radius: 55px;
   z-index: 1;
 }
@@ -168,17 +268,6 @@ button {
   text-align: center;
 }
 
-a {
-  text-decoration: none;
-  hover {
-    text-decoration: underline;
-  }
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 .open {
   width: 450px;
   height: 450px;
@@ -194,6 +283,15 @@ a:hover {
 .for-btn {
   display: flex;
   justify-content: space-between;
+}
+
+.icon-For-menu {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  width: 25px;
+  aspect-ratio: 1/1;
+  display: none;
 }
 
 .for-btn > button {
@@ -233,7 +331,7 @@ a:hover {
   border-radius: 30px;
   width: 300px;
   height: 300px;
-  background-color: rgb(64, 64, 64);
+  background-image: url(mainBG.jpg);
   color: white;
   display: flex;
   justify-content: center;
@@ -313,4 +411,41 @@ a:hover {
   height: 100%;
   background-color: rgb(48, 48, 48);
   z-index: 9;
+}
+
+@media (max-width: 1535px) {
+  nav > ul {
+    margin-left: 45%;
+    transition: 0.5s ease-in;
+  }
+}
+
+@media (min-width: 1040px) {
+  main > footer {
+    width: 55vh;
+    transition: 0.7s ease;
+  }
+}
+
+@media (min-width: 900px) {
+  .navlistOpt {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 900px) {
+  nav > ul > a {
+    display: none;
+    transition: 0.5s ease;
+  }
+  .icon-For-menu {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .link {
+    display: none;
+  }
+  #a {
+    display: none;
+  }
 }
