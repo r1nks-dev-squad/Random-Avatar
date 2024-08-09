@@ -1,0 +1,7 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.inlineSuggest.enabled": true,
+  "prettier.semi": true,
+  "editor.formatOnSave": true,
+  "prettier.singleQuote": true
+}
