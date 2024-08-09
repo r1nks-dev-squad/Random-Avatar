@@ -50,15 +50,15 @@ $ git clone https://github.com/r1nks-dev-squad/Random-avatar
 # Usage
 **1**.Once you open web app hit the button proceed
 
-<img src="https://github.com/user-attachments/assets/6d267664-c519-485e-8dc3-eba999044ba9" width="600">
+<img src="https://github.com/user-attachments/assets/344db5c5-77ff-48d3-b8d1-cd248795b8e9" width="600">
 
 **2**.Enter your **Name**(required) and age (optionaly)
 
-<img src="https://github.com/user-attachments/assets/70997d8a-7f8e-458e-90b9-d56426363ee6" width="600">
+<img src="https://github.com/user-attachments/assets/93675eb2-486f-414e-8a90-7f798a74e377" width="600">
 
 **3**.Get your **exlusive** avatar
 
-<img src="https://github.com/user-attachments/assets/4ce2f56c-f9d7-4078-873d-eb589967aed5" width="600">
+<img src="https://github.com/user-attachments/assets/d5cec621-307c-4369-86dd-f1204ef575ff" width="600">
 
 ---
 
@@ -79,6 +79,7 @@ $ git clone https://github.com/r1nks-dev-squad/Random-avatar
 **Organisation's manager (John):** johnwalkerker16071989@gmail.com;
 
 ---
+
 
 
 
