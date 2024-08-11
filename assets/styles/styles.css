@@ -21,6 +21,7 @@
 
 body {
   background-image: url(mainBG.jpg);
+  overflow: hidden;
 }
 
 header {
@@ -31,6 +32,11 @@ header {
   font-size: 35px;
   font-weight: bold;
 }
+
+.lineUp {
+  position: fixed;
+}
+
 .navlist {
   display: flex;
   content: ' ';
@@ -52,7 +58,7 @@ header {
 nav > ul {
   width: 400px;
   position: fixed;
-  right: 20%;
+  right: 17%;
 }
 nav {
   color: white;
@@ -61,6 +67,7 @@ nav {
   display: flex;
   background: transparent;
   -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border-bottom: 2px solid gray;
   align-items: center;
   justify-content: center;
@@ -95,6 +102,7 @@ nav > ul > a {
   width: 200px;
   background: transparent;
   -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border: 2px solid gray;
   height: 300px;
   border-radius: 25px;
@@ -207,6 +215,8 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 450px;
+  height: 450px;
   transform: translate(-50%, -50%);
   /*display: flex;*/
   flex-direction: column;
@@ -269,8 +279,6 @@ button {
 }
 
 .open {
-  width: 450px;
-  height: 450px;
   display: flex;
   visibility: visible;
   transition: 1s ease-in;
@@ -303,6 +311,11 @@ button {
   font-weight: 600;
 }
 
+.r1nk::placeholder,
+.r4nk::placeholder {
+  color: rgb(194, 194, 194);
+}
+
 #sup {
   color: #fff;
   text-decoration: none;
@@ -329,9 +342,9 @@ button {
 .noPrompt {
   font-family: montserrat;
   border-radius: 30px;
-  width: 300px;
+  width: 296px;
   height: 300px;
-  background-image: url(mainBG.jpg);
+  background-color: rgb(48, 48, 48);
   color: white;
   display: flex;
   justify-content: center;
@@ -447,5 +460,76 @@ button {
   }
   #a {
     display: none;
+  }
+}
+
+@media (max-height: 910px) {
+  .for-inputs {
+    height: 540px;
+  }
+  .for-inputs1 {
+    height: 560px;
+  }
+}
+
+@media (max-width: 470px) {
+  .for-name {
+    width: 266px;
+  }
+  .modal-box {
+    width: 350px;
+  }
+  .for-lang {
+    margin-right: 100px;
+  }
+  #sup {
+    display: none;
+  }
+  .for-sup-right {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 390px) {
+  body {
+    background-image: none;
+    background-color: rgb(48, 48, 48);
+  }
+  .for-inputs {
+    width: 340px;
+    height: 550px;
+  }
+  .for-inputs1 {
+    visibility: hidden;
+  }
+  .noPrompt {
+    width: 266px;
+    height: 270px;
+    background-image: none;
+    background-color: rgb(48, 48, 48);
+    font-size: 15px;
+  }
+  .for-name {
+    width: 266px;
+  }
+  .modal-box {
+    width: 350px;
+  }
+  .for-lang {
+    margin-right: 100px;
+  }
+  #sup {
+    display: none;
+  }
+  .for-sup-right {
+    margin-left: 80px;
+  }
+}
+@media (max-height: 800px) {
+  .for-inputs {
+    height: 570px;
+  }
+  .for-inputs1 {
+    height: 590px;
   }
 }
