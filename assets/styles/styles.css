@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -24,13 +25,11 @@ body {
   overflow: hidden;
 }
 
-header {
-  position: fixed;
-  top: 1.5%;
-  left: 3%;
-  font-family: poppins;
-  font-size: 35px;
-  font-weight: bold;
+.logo {
+  font-family: montserrat;
+  font-size: 30px;
+  position: absolute;
+  left: 1%;
 }
 
 .lineUp {
@@ -47,8 +46,54 @@ header {
   font-size: 25px;
 }
 
-.navlist > a {
+.navlist > a > p {
   color: white;
+}
+
+.ham-menu {
+  display: none;
+  height: 40px;
+  aspect-ratio: 1/1;
+  position: absolute;
+  right: 3%;
+}
+
+.ham-menu.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.ham-menu span {
+  height: 5px;
+  width: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: rgb(255, 255, 255);
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease;
+  border-radius: 25px;
+}
+
+.ham-menu span:nth-child(1) {
+  top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+  top: 75%;
+}
+
+.navlist > a > p:hover {
+  border-bottom: 3px solid white;
 }
 
 .nav-element {
@@ -103,7 +148,7 @@ nav > ul > a {
   background: transparent;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  border: 2px solid gray;
+  border: 2px solid rgb(255, 255, 255);
   height: 300px;
   border-radius: 25px;
   z-index: 9999999999999;
@@ -180,7 +225,11 @@ button {
   height: 620px;
   padding: 37px;
   /*TODO:*/
-  background: rgb(106, 106, 106);
+  /* background: rgb(106, 106, 106); */
+  background: transparent;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  border: 2px solid white;
   border-radius: 55px;
   z-index: 2;
 }
@@ -195,7 +244,7 @@ button {
   width: 390px;
   height: 640px;
   padding: 27px;
-  background: linear-gradient(90deg, #03a9f4, #f441a5);
+  /* background: linear-gradient(90deg, #03a9f4, #f441a5); */
   border-radius: 55px;
   z-index: 1;
 }
@@ -299,6 +348,9 @@ button {
   right: 15px;
   width: 25px;
   aspect-ratio: 1/1;
+}
+
+.issue {
   display: none;
 }
 
@@ -451,7 +503,7 @@ button {
     display: none;
     transition: 0.5s ease;
   }
-  .icon-For-menu {
+  .ham-menu {
     display: inline-block;
     cursor: pointer;
   }
@@ -464,9 +516,6 @@ button {
 }
 
 @media (max-height: 910px) {
-  .for-inputs {
-    height: 540px;
-  }
   .for-inputs1 {
     height: 560px;
   }
@@ -474,7 +523,6 @@ button {
 
 @media (max-width: 470px) {
   .for-name {
-    width: 266px;
   }
   .modal-box {
     width: 350px;
@@ -486,8 +534,19 @@ button {
     display: none;
   }
   .for-sup-right {
-    margin-left: 80px;
+    margin-left: 100px;
   }
+}
+
+.download {
+  width: 20%;
+  position: absolute;
+  bottom: 1%;
+}
+
+h3 {
+  color: rgb(108, 108, 108);
+  font-family: montserrat;
 }
 
 @media (max-width: 390px) {
@@ -525,11 +584,49 @@ button {
     margin-left: 80px;
   }
 }
+@media (max-width: 615px) {
+  .download {
+    display: none;
+  }
+}
 @media (max-height: 800px) {
   .for-inputs {
-    height: 570px;
+    height: 540px;
   }
   .for-inputs1 {
     height: 590px;
+  }
+}
+@media (max-height: 650px) {
+  .for-inputs {
+    height: 510px;
+  }
+}
+@media (max-height: 590px) {
+  .issue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 590px;
+    z-index: 100;
+    background-color: #fff;
+  }
+  .issue h1 {
+    color: red;
+    font-family: montserrat;
+  }
+  .for-inputs {
+    display: none;
+  }
+  .for-inputs1 {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .download {
+    display: none;
   }
 }

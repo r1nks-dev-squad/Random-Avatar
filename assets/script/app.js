@@ -14,42 +14,41 @@ const select = document.getElementById('language');
 const black = document.getElementById('black');
 const bod = document.querySelector('body');
 var navlist = document.querySelector('#navlistOpt');
-var menu = document.querySelector('.icon-For-menu');
-var closeI = document.querySelector('.fa-xmark');
-var menuI = document.querySelector('.fa-bars');
+// var menu = document.querySelector('.icon-For-menu');
+// var closeI = document.querySelector('.fa-xmark');
+// var menuI = document.querySelector('.fa-bars');
 const home = document.getElementsByClassName('reload');
+const hamMenu = document.querySelector('.ham-menu');
 
-closeI.classList.add('noUse');
-menu.addEventListener('click', function () {
-  if (navlist.id.includes('navlistOpt')) {
-    openNav();
+hamMenu.addEventListener('click', () => {
+  hamMenu.classList.toggle('active');
+  if (hamMenu.classList.contains('active')) {
+    navlist.id = '';
+    navlist.classList.add('navlistOpt');
+    // closeI.classList.remove('noUse');
+    //for check
+    console.log('nav list was opened succesfully');
   } else {
-    closeNav();
-  }
-});
-bod.addEventListener('contextmenu', function (a) {
-  alert('Inspect is forbidden');
-  a.preventDefault();
-});
-
-function closeNav() {
-  if (!navlist.id.includes('navlistOpt')) {
     navlist.classList.remove('navlistOpt');
     navlist.id = 'navlistOpt';
-    menuI.classList.remove('noUse');
-    closeI.classList.add('noUse');
+    // closeI.classList.add('noUse');
     //for check
-    //      console.log('nav list was closed succesfully');
+    console.log('nav list was closed succesfully');
   }
-}
-function openNav() {
-  navlist.id = '';
-  navlist.classList.add('navlistOpt');
-  menuI.classList.add('noUse');
-  closeI.classList.remove('noUse');
-  //for check
-  //      console.log('nav list was opened succesfully');
-}
+});
+
+// closeI.classList.add('noUse');
+// menu.addEventListener('click', function () {
+//   if (navlist.id.includes('navlistOpt')) {
+//     openNav();
+//   } else {
+//     closeNav();
+//   }
+// });
+// bod.addEventListener('contextmenu', function (a) {
+//   alert('Inspect is forbidden');
+//   a.preventDefault();
+// });
 
 const translations = {
   en: {
