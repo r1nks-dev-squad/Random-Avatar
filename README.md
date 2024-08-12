@@ -12,7 +12,7 @@
 
 - [About](#about)
 
-- [Installation](#instalation)
+- [Installation(Web-site)](#instalation)
 
 - [Usage](#usage)
 
