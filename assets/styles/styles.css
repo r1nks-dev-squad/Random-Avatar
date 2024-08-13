@@ -58,6 +58,10 @@ body {
   right: 3%;
 }
 
+.ham-menu::selection {
+  background-color: transparent;
+}
+
 .ham-menu.active span:nth-child(1) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
@@ -193,6 +197,10 @@ button {
   transition: 0.5s ease-in;
 }
 
+#submit::selection {
+  background-color: transparent;
+}
+
 #submit:hover {
   background-color: transparent;
   transition: 0.5s ease-in;
@@ -204,6 +212,10 @@ button {
   width: 130px;
   border: 2px solid white;
   transition: 0.5s ease-in;
+}
+
+#trouble::selection {
+  background-color: transparent;
 }
 
 #trouble:hover {
@@ -276,6 +288,10 @@ button {
   border-radius: 30px;
   font-family: montserrat;
   transition: 1s ease-in;
+}
+
+.modal-box::selection {
+  background-color: transparent;
 }
 
 .modal-box > h1 {
@@ -438,6 +454,14 @@ button {
   transition: all 0.4s ease;
 }
 
+.container1::selection {
+  background-color: transparent;
+}
+
+#btn-proceed::selection {
+  background-color: transparent;
+}
+
 .container1::before {
   content: '';
   position: absolute;
@@ -551,7 +575,6 @@ h3 {
 
 @media (max-width: 390px) {
   body {
-    background-image: none;
     background-color: rgb(48, 48, 48);
   }
   .for-inputs {
@@ -564,8 +587,7 @@ h3 {
   .noPrompt {
     width: 266px;
     height: 270px;
-    background-image: none;
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(35, 35, 35);
     font-size: 15px;
   }
   .for-name {

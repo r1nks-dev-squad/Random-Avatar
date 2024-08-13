@@ -12,11 +12,8 @@ const forInp = document.querySelector('.for-inputs');
 const forInp1 = document.querySelector('.for-inputs1');
 const select = document.getElementById('language');
 const black = document.getElementById('black');
-const bod = document.querySelector('body');
+const body = document.querySelector('body');
 var navlist = document.querySelector('#navlistOpt');
-// var menu = document.querySelector('.icon-For-menu');
-// var closeI = document.querySelector('.fa-xmark');
-// var menuI = document.querySelector('.fa-bars');
 const home = document.getElementsByClassName('reload');
 const hamMenu = document.querySelector('.ham-menu');
 
@@ -25,30 +22,18 @@ hamMenu.addEventListener('click', () => {
   if (hamMenu.classList.contains('active')) {
     navlist.id = '';
     navlist.classList.add('navlistOpt');
-    // closeI.classList.remove('noUse');
-    //for check
-    console.log('nav list was opened succesfully');
   } else {
     navlist.classList.remove('navlistOpt');
     navlist.id = 'navlistOpt';
-    // closeI.classList.add('noUse');
-    //for check
-    console.log('nav list was closed succesfully');
   }
 });
 
-// closeI.classList.add('noUse');
-// menu.addEventListener('click', function () {
-//   if (navlist.id.includes('navlistOpt')) {
-//     openNav();
-//   } else {
-//     closeNav();
-//   }
-// });
-// bod.addEventListener('contextmenu', function (a) {
-//   alert('Inspect is forbidden');
-//   a.preventDefault();
-// });
+forInp.addEventListener('click', () => {
+  hamMenu.classList.toggle('active');
+
+  navlist.classList.remove('navlistOpt');
+  navlist.id = 'navlistOpt';
+});
 
 const translations = {
   en: {
@@ -102,18 +87,6 @@ btn.addEventListener('click', () => {
 
   const age = inputColor.value;
 
-  //ForDeveloper or debug if error
-  //setTimeout(clearCons, 3000);
-
-  //ForDeveloper or debug if error
-  //console.log(container.innerHTML);
-
-  //ForDeveloper or debug if error
-  //console.log(age);
-
-  //ForDeveloper or debug if error
-  //console.log(nameValue);
-
   htwo.innerHTML = `${nameValue}` + ' ' + `(${age}y.o)`;
   if (age == '') {
     htwo.innerHTML = `${nameValue}`;
@@ -124,8 +97,7 @@ btn.addEventListener('click', () => {
                 <h1>Eter your name</h1>
             </div>`;
   } else {
-    //ForDeveloper or debug if error
-    //console.log('false');
+    //just a comment :D
   }
   if (age !== '' && nameValue == '') {
     htwo.innerHTML = `<span class='red'>Enter your name!!!</span>`;
@@ -133,14 +105,10 @@ btn.addEventListener('click', () => {
                 <h1>Eter your name</h1>
             </div>`;
   }
-
-  //ForDeveloper or debug if error
-  //console.log(htwo.innerHTML);
 });
 
 function clearCons() {
-  //ForDeveloper or debug if error
-  //console.clear();
+  console.clear();
 }
 
 btnProceed.addEventListener('click', () => {
@@ -159,6 +127,3 @@ select.addEventListener('change', (event) => {
   paragraph.innerHTML = translations[selected].paragraph;
   btnProceed.innerHTML = translations[selected].button;
 });
-
-//ForDeveloper or debug if error
-//console.log(result);
