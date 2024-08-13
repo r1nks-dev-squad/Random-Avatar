@@ -12,7 +12,7 @@
 
 - [About](#about)
 
-- [Installation](#instalation)
+- [Installation(Web-site)](#instalation)
 
 - [Usage](#usage)
 
@@ -54,11 +54,11 @@ $ git clone https://github.com/r1nks-dev-squad/Random-avatar
 
 **2**.Enter your **Name**(required) and age (optionaly)
 
-<img src="https://github.com/user-attachments/assets/93675eb2-486f-414e-8a90-7f798a74e377" width="600">
+<img src="https://github.com/user-attachments/assets/c7594d3b-8235-42f1-b826-f189e0ed902f" width="600">
 
 **3**.Get your **exlusive** avatar
 
-<img src="https://github.com/user-attachments/assets/d5cec621-307c-4369-86dd-f1204ef575ff" width="600">
+<img src="https://github.com/user-attachments/assets/550f74ab-2fbe-4a58-94a3-dc1053b8ccf5" width="600">
 
 ---
 
