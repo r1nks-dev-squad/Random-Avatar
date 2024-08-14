@@ -16,6 +16,10 @@ const body = document.querySelector('body');
 var navlist = document.querySelector('#navlistOpt');
 const home = document.getElementsByClassName('reload');
 const hamMenu = document.querySelector('.ham-menu');
+const hamMenu1 = document.querySelector('.ham-menu1');
+const modalSettings = document.querySelector('.modal-settings');
+const btnSettings = document.querySelector('.settings');
+const variants = document.querySelectorAll('.variant');
 
 hamMenu.addEventListener('click', () => {
   hamMenu.classList.toggle('active');
@@ -33,6 +37,29 @@ forInp.addEventListener('click', () => {
 
   navlist.classList.remove('navlistOpt');
   navlist.id = 'navlistOpt';
+});
+
+btnSettings.addEventListener('click', () => {
+  modalSettings.classList.toggle('closed1');
+});
+
+hamMenu1.addEventListener('click', () => {
+  modalSettings.classList.toggle('closed1');
+});
+
+console.log(variants);
+
+variants.forEach((variant) => {
+  variant.addEventListener('click', () => {
+    const img = variant.querySelector('img');
+    const imgSrc = img.getAttribute('src');
+    document.body.classList.add('transitioning');
+    setTimeout(() => {
+      document.body.style.backgroundImage = `url(${imgSrc})`;
+      document.body.classList.remove('transitioning');
+    }, 200);
+    console.log(imgSrc);
+  });
 });
 
 const translations = {
