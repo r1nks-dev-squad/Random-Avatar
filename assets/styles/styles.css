@@ -173,7 +173,7 @@ nav {
   background: transparent;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid rgb(255, 255, 255);
   align-items: center;
   justify-content: center;
 }
@@ -441,7 +441,7 @@ button {
 
 .r1nk::placeholder,
 .r4nk::placeholder {
-  color: rgb(194, 194, 194);
+  color: rgb(255, 255, 255);
 }
 
 #sup {
@@ -735,6 +735,13 @@ h3 {
     margin-left: 80px;
   }
 }
+
+@media (max-width: 570px) {
+  .modal-settings {
+    display: none;
+  }
+}
+
 @media (max-width: 615px) {
   .download {
     display: none;
@@ -753,6 +760,13 @@ h3 {
     height: 510px;
   }
 }
+
+@media (max-height: 708px) {
+  .theme-and-git-version {
+    display: none;
+  }
+}
+
 @media (max-height: 590px) {
   .issue {
     display: flex;
