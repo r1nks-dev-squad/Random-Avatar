@@ -23,18 +23,23 @@
 ---
 
 # About
+
 Random-avatar is a free-to-use web app created by **<span><a href="https://github.com/r1nk1337">r1nk</a></span>**. In this app you can type your name and you'll get a cool avatar powered by <a href="https://www.dicebear.com">DiceBear</a> an open-source styles library
 
 ---
 
 # Instalation
+
 **Website**: [Random Avatar](https://random-avatar-client.web.app) or **install** app
 
 **1**.Clone this repo.
+
 ```bash
 git clone https://github.com/r1nks-dev-squad/Random-avatar
 ```
+
 **2**.Press **Enter** to create your local clone.
+
 ```bash
 $ git clone https://github.com/r1nks-dev-squad/Random-avatar
 > Cloning into `GitHub`...
@@ -43,11 +48,13 @@ $ git clone https://github.com/r1nks-dev-squad/Random-avatar
 > remove: Total 10 (delta 1), reused 10 (delta 1)
 > Unpacking objects: 100% (10/10), done.
 ```
+
 **3**.Congrats you've installed this app locally. Now just hit open with VS-Code
 
 ---
 
 # Usage
+
 **1**.Once you open web app hit the button proceed
 
 <img src="https://github.com/user-attachments/assets/344db5c5-77ff-48d3-b8d1-cd248795b8e9" width="600">
@@ -79,10 +86,3 @@ $ git clone https://github.com/r1nks-dev-squad/Random-avatar
 **Organisation's manager (John):** johnwalkerker16071989@gmail.com;
 
 ---
-
-
-
-
-
-
-
