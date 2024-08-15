@@ -8,6 +8,11 @@
 
 ---
 
+# New Feature
+<img src='https://github.com/user-attachments/assets/232d0e40-9211-412e-9ca7-b28a2178acad' width=600>
+
+---
+
 # Navigation Panel
 
 - [About](#about)
