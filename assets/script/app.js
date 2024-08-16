@@ -59,7 +59,6 @@ console.log(variants);
 
 function backgroundImage(imgUrl) {
   document.body.style.backgroundImage = `url(${imgUrl})`;
-  document.body.classList.remove('transitioning');
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -74,7 +73,6 @@ variants.forEach((variant) => {
     const img = variant.querySelector('img');
     const imgSrc = img.getAttribute('src');
     localStorage.setItem('backgoundImage', imgSrc);
-    document.body.classList.add('transitioning');
     setTimeout(backgroundImage(imgSrc), 200);
     console.log(imgSrc);
     const themename = variant.querySelector('p');
