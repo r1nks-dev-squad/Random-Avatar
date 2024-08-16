@@ -37,7 +37,7 @@ hamMenu.addEventListener('click', () => {
 });
 
 forInp.addEventListener('click', () => {
-  hamMenu.classList.toggle('active');
+  hamMenu.classList.remove('active');
 
   navlist.classList.remove('navlistOpt');
   navlist.id = 'navlistOpt';

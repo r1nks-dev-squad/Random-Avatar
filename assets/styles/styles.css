@@ -560,6 +560,7 @@ button {
   height: 100%;
   background-color: rgb(48, 48, 48);
   z-index: 9;
+  overflow: hidden;
 }
 
 .theme-and-git-version {
