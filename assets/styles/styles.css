@@ -196,6 +196,11 @@ nav > ul > a {
   visibility: hidden;
 }
 
+.invalid {
+  border: 2px solid rgb(255, 70, 70);
+  border-radius: 10px;
+}
+
 .navlistOpt {
   display: flex;
   flex-direction: column;

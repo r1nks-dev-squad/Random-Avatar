@@ -38,7 +38,6 @@ hamMenu.addEventListener('click', () => {
 
 forInp.addEventListener('click', () => {
   hamMenu.classList.remove('active');
-
   navlist.classList.remove('navlistOpt');
   navlist.id = 'navlistOpt';
 });
@@ -144,17 +143,22 @@ btn.addEventListener('click', () => {
   } else {
     //just a comment :D
   }
-  if (age !== '' && nameValue == '') {
+  if ((age !== '', nameValue == '')) {
     htwo.innerHTML = `<span class='red'>Enter your name!!!</span>`;
     container.innerHTML = `<div class="noPrompt">
                 <h1>Eter your name</h1>
             </div>`;
+    inputName.classList.add('invalid');
+  } else {
+    inputName.classList.remove('invalid');
   }
 });
 
 function clearCons() {
   console.clear();
 }
+
+setTimeout(clearCons, 0);
 
 btnProceed.addEventListener('click', () => {
   modalBox.classList.replace('open', 'closed');
