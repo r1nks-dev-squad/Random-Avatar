@@ -149,6 +149,8 @@ btn.addEventListener('click', () => {
                 <h1>Eter your name</h1>
             </div>`;
     inputName.classList.add('invalid');
+  } else if (typeof age === String) {
+    inputColor.classList.add('invalid');
   } else {
     inputName.classList.remove('invalid');
   }
