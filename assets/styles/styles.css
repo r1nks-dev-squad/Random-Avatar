@@ -78,6 +78,7 @@ body.transitioning::before {
   height: 40px;
   aspect-ratio: 1/1;
   position: absolute;
+  top: 3%;
   right: 3%;
 }
 
@@ -594,7 +595,8 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 550px;
+  justify-content: center;
+  width: 650px;
   height: 650px;
   border-radius: 30px;
   z-index: 9;
@@ -609,13 +611,13 @@ button {
 }
 
 .for-themes {
-  width: 85%;
-  height: 85%;
+  width: fit-content;
+  height: fit-content;
   background: transparent;
 
   padding: 30px 13px 13px 13px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
 
@@ -632,6 +634,73 @@ button {
   border: 1px solid white;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  margin: 0;
+}
+
+.for-themes :nth-child(7) {
+  background: linear-gradient(
+    to right,
+    #dad7cd,
+    #a3b18a,
+    #588157,
+    #3a5a40,
+    #344e41
+  );
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 190px;
+  height: 130px;
+  background-color: transparent;
+  border-radius: 7px;
+  border: 1px solid white;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  margin: 0;
+}
+
+.for-themes :nth-child(8) {
+  background: linear-gradient(to right, #caa2e4, #e2d1e1, #c1bdeb);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 190px;
+  height: 130px;
+  background-color: transparent;
+  border-radius: 7px;
+  border: 1px solid white;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  margin: 0;
+  color: #565264;
+}
+
+.for-themes :nth-child(9) {
+  background: linear-gradient(
+    to right,
+    #565264,
+    #706677,
+    #a6808c,
+    #ccb7ae,
+    #d6cfcb
+  );
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 190px;
+  height: 130px;
+  background-color: transparent;
+  border-radius: 7px;
+  border: 1px solid white;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  margin: 0;
 }
 
 .variant > img {
@@ -642,6 +711,53 @@ button {
 #theme {
   margin-top: 10px;
   color: white;
+}
+
+.nord {
+  background-color: #3a5a40;
+  background-image: none !important;
+}
+
+.nord1 {
+  background-color: #588157;
+  border: 3px solid #344e41;
+}
+
+.nord2 {
+  background-color: #344e41;
+  color: #a3b18a;
+}
+
+.Catpuccin {
+  background-color: #a6808c !important;
+  background-image: none !important;
+}
+
+.Catpuccin1 {
+  background-color: #ccb7ae;
+  border: 3px solid #565264;
+}
+
+.Catpuccin2 {
+  background-color: #565264;
+  color: #d6cfcb;
+}
+
+/* #caa2e4, #e2d1e1, #c1bdeb */
+
+.Vince {
+  background-color: #e2d1e1;
+  background-image: none !important;
+}
+
+.Vince1 {
+  background-color: #c1bdeb;
+  border: 3px solid #caa2e4;
+}
+
+.Vince2 {
+  background-color: #caa2e4;
+  color: #ebb4fc;
 }
 
 @media (max-width: 1535px) {

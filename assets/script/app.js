@@ -13,6 +13,7 @@ const forInp1 = document.querySelector('.for-inputs1');
 const select = document.getElementById('language');
 const black = document.getElementById('black');
 const body = document.querySelector('body');
+const nav = document.querySelector('nav');
 var navlist = document.querySelector('#navlistOpt');
 const home = document.getElementsByClassName('reload');
 const hamMenu = document.querySelector('.ham-menu');
@@ -21,9 +22,21 @@ const modalSettings = document.querySelector('.modal-settings');
 const btnSettings = document.querySelector('.settings');
 const btnSettings1 = document.querySelector('.settings1');
 const variants = document.querySelectorAll('.variant');
+const colorVariant = document.querySelector('.variant-color1');
+const colorVariant2 = document.querySelector('.variant-color2');
+const colorVariant3 = document.querySelector('.variant-color3');
 const theme = document.querySelector('.theme');
+const noprompt = document.querySelector('.noPrompt');
+
+console.log(colorVariant);
 
 console.log(theme.innerHTML);
+
+function changeTheme(color, color1, color2) {
+  forInp.classList.add(`${color}`);
+  body.classList.add(`${color1}`);
+  noprompt.classList.add(`${color2}`);
+}
 
 hamMenu.addEventListener('click', () => {
   hamMenu.classList.toggle('active');
@@ -76,8 +89,39 @@ variants.forEach((variant) => {
     console.log(imgSrc);
     const themename = variant.querySelector('p');
     theme.innerHTML = `${themename.innerHTML}`;
+    forInp.classList = 'for-inputs';
+    noprompt.classList = 'noPrompt';
+    body.classList = '';
   });
 });
+
+colorVariant.addEventListener('click', () => {
+  forInp.classList = 'for-inputs';
+  forInp.classList.add('nord1');
+  body.classList = '';
+  body.classList.add('nord');
+  noprompt.classList = 'noPrompt';
+  noprompt.classList.add('nord2');
+});
+
+colorVariant2.addEventListener('click', () => {
+  forInp.classList = 'for-inputs';
+  forInp.classList.add('Vince1');
+  body.classList = '';
+  body.classList.add('Vince');
+  noprompt.classList.add('Vince2');
+});
+
+colorVariant3.addEventListener('click', () => {
+  forInp.classList = 'for-inputs';
+  forInp.classList.add('Catpuccin1');
+  body.classList = '';
+  body.classList.add('Catpuccin');
+  noprompt.classList.add('Catpuccin2');
+});
+
+// const themename = variantcol.getAttribute('p');
+// changeTheme(`${themename}`, `${themename}1`, `${themename}2`);
 
 const translations = {
   en: {
@@ -160,7 +204,7 @@ function clearCons() {
   console.clear();
 }
 
-setTimeout(clearCons, 0);
+// setTimeout(clearCons, 0);
 
 btnProceed.addEventListener('click', () => {
   modalBox.classList.replace('open', 'closed');
