@@ -27,6 +27,7 @@ const colorVariant2 = document.querySelector('.variant-color2');
 const colorVariant3 = document.querySelector('.variant-color3');
 const theme = document.querySelector('.theme');
 const noprompt = document.querySelector('.noPrompt');
+const downloadIcon = document.querySelector('.download-icon');
 
 console.log(colorVariant);
 
@@ -169,11 +170,24 @@ btn.addEventListener('click', () => {
 
   const result = colors[randomNum(0, 6)];
 
-  container.innerHTML = `<img src="https://api.dicebear.com/6.x/${
+  const url = `https://api.dicebear.com/6.x/${
     styles[randomNum(0, 7)]
-  }/svg?seed=${nameValue}&backgroundColor=${result}&radius=10" alt="thx dicebear">`;
+  }/svg?seed=${nameValue}&backgroundColor=${result}&radius=10`;
+
+  container.innerHTML = `<img src='${url}' alt="thx dicebear">`;
 
   const age = inputColor.value;
+
+  //TODO:
+  const img1 = container.querySelector('img');
+  const imgPath = img1.getAttribute('src');
+  console.log(imgPath);
+
+  const downlink = downloadIcon.querySelector('a');
+  downlink.outerHTML = `<a href='${url}' download="sigma">
+          <img src="assets/styles/images/download.svg" alt="download-icon">
+        </a>`;
+  console.log(downlink.outerHTML);
 
   htwo.innerHTML = `${nameValue}` + ' ' + `(${age}y.o)`;
   if (age == '') {

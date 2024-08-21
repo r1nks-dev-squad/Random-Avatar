@@ -159,7 +159,7 @@ body.transitioning::before {
 }
 
 .navlist > a > p:hover {
-  border-bottom: 3px solid white;
+  border-bottom: 45px solid white;
 }
 
 .nav-element {
@@ -311,6 +311,18 @@ button {
   border: 2px solid white;
   border-radius: 55px;
   z-index: 2;
+}
+
+.download-icon {
+  position: absolute;
+  top: 75px;
+  left: 55px;
+}
+
+.download-icon > a {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
 .for-inputs1 {
@@ -512,14 +524,14 @@ button {
   background-color: #000;
   color: #fff;
   cursor: pointer;
-  box-shadow: 2px 2px 3px #000000b4;
+  box-shadow: 2px 2px 45px #000000b4;
   transition: all 0.4s ease;
 }
 
 .container1 {
+  /* width: 180px; */
+  padding: 4px;
   position: relative;
-  padding: 3px;
-  padding-bottom: 5px;
   background: linear-gradient(90deg, #03a9f4, #f441a5);
   border-radius: 0.9em;
   transition: all 0.4s ease;
@@ -615,7 +627,7 @@ button {
   height: fit-content;
   background: transparent;
 
-  padding: 30px 13px 13px 13px;
+  padding: 30px 145px 145px 145px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -720,7 +732,7 @@ button {
 
 .nord1 {
   background-color: #588157;
-  border: 3px solid #344e41;
+  border: 45px solid #344e41;
 }
 
 .nord2 {
@@ -735,7 +747,7 @@ button {
 
 .Catpuccin1 {
   background-color: #ccb7ae;
-  border: 3px solid #565264;
+  border: 45px solid #565264;
 }
 
 .Catpuccin2 {
@@ -752,7 +764,7 @@ button {
 
 .Vince1 {
   background-color: #c1bdeb;
-  border: 3px solid #caa2e4;
+  border: 45px solid #caa2e4;
 }
 
 .Vince2 {
@@ -804,8 +816,6 @@ button {
 }
 
 @media (max-width: 470px) {
-  .for-name {
-  }
   .modal-box {
     width: 350px;
   }
