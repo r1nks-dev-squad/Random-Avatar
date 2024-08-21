@@ -2,6 +2,7 @@ const inputName = document.querySelector('.r1nk');
 const inputColor = document.getElementById('color');
 const btn = document.querySelector('#submit');
 const container = document.querySelector('.for-img');
+const mainImg = document.querySelector('.mainImg');
 const htwo = document.querySelector('#yourName');
 const heading = document.querySelector('#heading');
 const paragraph = document.querySelector('#paragraph');
@@ -166,28 +167,26 @@ let colors = [
 ];
 
 btn.addEventListener('click', () => {
+  noprompt.classList.add('closed1');
   const nameValue = inputName.value;
 
   const result = colors[randomNum(0, 6)];
 
-  const url = `https://api.dicebear.com/6.x/${
-    styles[randomNum(0, 7)]
-  }/svg?seed=${nameValue}&backgroundColor=${result}&radius=10`;
+  downloadIcon.classList.remove('closed');
 
-  container.innerHTML = `<img src='${url}' alt="thx dicebear">`;
+  function urlFunc(settings) {
+    return `https://api.dicebear.com/6.x/${
+      styles[randomNum(0, 7)]
+    }/${settings}?seed=${nameValue}&backgroundColor=${result}&radius=10`;
+  }
+
+  mainImg.src = urlFunc('svg');
+
+  noprompt.classList.add('closed1');
+
+  // container.innerHTML = `<img src='${url}' alt="thx dicebear">`;
 
   const age = inputColor.value;
-
-  //TODO:
-  const img1 = container.querySelector('img');
-  const imgPath = img1.getAttribute('src');
-  console.log(imgPath);
-
-  const downlink = downloadIcon.querySelector('a');
-  downlink.outerHTML = `<a href='${url}' download="sigma">
-          <img src="assets/styles/images/download.svg" alt="download-icon">
-        </a>`;
-  console.log(downlink.outerHTML);
 
   htwo.innerHTML = `${nameValue}` + ' ' + `(${age}y.o)`;
   if (age == '') {
@@ -218,6 +217,14 @@ function clearCons() {
   console.clear();
 }
 
+downloadIcon.addEventListener('click', async () => {
+  const responce = await fetch(mainImg.src);
+  const blob = await responce.blob();
+  const downloadLink = document.createElement('a');
+  downloadLink.href = URL.createObjectURL(blob);
+  downloadLink.download = 'avatar by dream';
+  downloadLink.click();
+});
 // setTimeout(clearCons, 0);
 
 btnProceed.addEventListener('click', () => {
