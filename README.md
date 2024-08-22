@@ -8,13 +8,6 @@
 
 ---
 
-# New Feature
-<img src='https://github.com/user-attachments/assets/232d0e40-9211-412e-9ca7-b28a2178acad' width=600>
-
-**Themes** added change to your loved one 
-
----
-
 # Navigation Panel
 
 - [About](#about)
@@ -37,7 +30,7 @@ Random-avatar is a free-to-use web app created by **<span><a href="https://githu
 
 # Instalation
 
-**Website**: [Random Avatar](https://random-avatar-client.web.app) or **install** app
+**Website**: [Random Avatar](https://random-avatar-client.web.app) or **install** localy
 
 **1**.Clone this repo.
 
@@ -48,7 +41,6 @@ git clone https://github.com/r1nks-dev-squad/Random-avatar
 **2**.Press **Enter** to create your local clone.
 
 ```bash
-$ git clone https://github.com/r1nks-dev-squad/Random-avatar
 > Cloning into `GitHub`...
 > remote: Counting objects: 10, done.
 > remote: Compressing objects: 100% (8/8), done.
@@ -62,23 +54,26 @@ $ git clone https://github.com/r1nks-dev-squad/Random-avatar
 
 # Usage
 
-**1**.Once you open web app hit the button proceed
+**1**.Once you open web app hit the button proceed.
 
-<img src="https://github.com/user-attachments/assets/344db5c5-77ff-48d3-b8d1-cd248795b8e9" width="600">
+<img src="https://github.com/user-attachments/assets/d9f4c18d-e496-40b8-a2aa-ccaa5f91d15c" width="600">
 
-**2**.Enter your **Name**(required) and age (optionaly)
+**2**.Enter your **Name**(required) and age (optionaly).
 
-<img src="https://github.com/user-attachments/assets/c7594d3b-8235-42f1-b826-f189e0ed902f" width="600">
+<img src="https://github.com/user-attachments/assets/ab2f4b29-67ba-4673-aeb2-e16e367921ec" width="600">
 
-**3**.Get your **exlusive** avatar
+**3**.Get your **exlusive** avatar.
 
-<img src="https://github.com/user-attachments/assets/550f74ab-2fbe-4a58-94a3-dc1053b8ccf5" width="600">
+<img src="https://github.com/user-attachments/assets/d131c217-6aae-455e-98c0-642a5fd2b3e4" width="600">
 
+**Customization**. Now you can choose a color **theme**(only on desktop).
+
+<img src="https://github.com/user-attachments/assets/eb1dfab8-0b88-4919-9f18-a1d868b92c86" width="600">
 ---
 
 # Special-thanks-to
 
-**Creator:** <a href="github.com/r1nk1337">r1nk1337</a>;
+**Creator:** <a href="https://github.com/r1nk1337">r1nk1337</a>;
 
 **Library & API:** <a href="https://www.dicebear.com">DiceBear</a>;
 
@@ -93,4 +88,3 @@ $ git clone https://github.com/r1nks-dev-squad/Random-avatar
 **Organisation's manager (John):** johnwalkerker16071989@gmail.com;
 
 ---
-.
