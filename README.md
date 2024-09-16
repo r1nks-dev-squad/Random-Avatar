@@ -69,6 +69,7 @@ git clone https://github.com/r1nks-dev-squad/Random-avatar
 **Customization**. Now you can choose a color **theme**(only on desktop).
 
 <img src="https://github.com/user-attachments/assets/eb1dfab8-0b88-4919-9f18-a1d868b92c86" width="600">
+
 ---
 
 # Special-thanks-to
