@@ -30,7 +30,7 @@ Random-avatar is a free-to-use web app created by **<span><a href="https://githu
 
 # Instalation
 
-**Website**: [Random Avatar](https://random-avatar-client.web.app) or **install** localy
+**WebApp**: **Install** localy
 
 **1**.Clone this repo.
 
